@@ -10,3 +10,22 @@
 
 ![System Flowchart](/images/serviceLayer.jpg)
 
+### API Flowchart
+
+![System Flowchart](/images/apiflowchart.jpg)
+
+
+## What Expected?
+
+#### 1. Define Graph Structure for Cybersecurity Data
+#### 2. Environment Setup
+#### 3. Build the Graph RAG Pipeline
+#### 4. Inference Pipeline for Question Answering
+#### 5. Deploy on AWS
+#### 6. Correct Solutions and accurate answers
+
+## What i compromised?
+#### 1. AWS Deployment:
+##### Reason: I have used my entire free tier, so I am unable to deploy it on AWS.
+##### 2. Correct Solutions and accurate answers
+##### Reason: The OpenAI API is not functioning, so I opted for GPT-2, which takes more time to process and sometimes provides irrelevant responses. These could be improved through prompt optimization.
