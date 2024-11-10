@@ -73,7 +73,16 @@ cd src
 ```
 7. Start FastAPI Server
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
+
+## Testing
+run each curl command present in the testingusingCurl.txt file
+
+## Outputs
+
+
+
+![System output](/images/fastAPIoutput.png)
 
 

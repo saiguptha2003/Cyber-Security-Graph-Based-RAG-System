@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "Testing /process_text/ endpoint"
+curl -X 'POST' \
+  'http://localhost:8000/process_text/' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "text": "IP address 192.168.0.1 is vulnerable to CVE-2023-12345"
+  }'
+
+echo -e "\n"
+
+echo "Testing /update_graph/ endpoint"
+curl -X 'POST' \
+  'http://localhost:8000/update_graph/' \
+  -H 'Content-Type: application/json' \
+  -d '[
+    {
+      "id": "entity1",
+      "type": "host",
+      "properties": {"ip": "192.168.0.1", "name": "Host1"},
+      "relationships": [{"target_id": "vulnerability1", "type": "has_vulnerability"}]
+    }
+  ]'
+
+echo -e "\n"
+
+echo "Testing /query/ endpoint"
+curl -X 'POST' \
+  'http://localhost:8000/query/' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "question": "What vulnerabilities exist for the IP 192.168.0.1?"
+  }'
