@@ -75,6 +75,13 @@ cd src
 ```bash
 uvicorn main:app --reload
 ```
+## Installing using Docker
+```bash
+docker build -t cybersecurity-fastapi .
+```
+```bash
+docker run -d -p 8000:8000 --name cybersecurity-fastapi-container cybersecurity-fastapi
+```
 
 ## Testing
 run each curl command present in the testingusingCurl.txt file
