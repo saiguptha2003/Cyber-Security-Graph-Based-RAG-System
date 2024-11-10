@@ -8,5 +8,5 @@
 
 ### System Flowchart
 
-![System Flowchart](/images/serviceLayer.jpeg)
+![System Flowchart](/images/serviceLayer.jpg)
 
