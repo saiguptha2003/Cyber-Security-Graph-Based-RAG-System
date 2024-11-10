@@ -27,5 +27,53 @@
 ## What i compromised?
 #### 1. AWS Deployment:
 ##### Reason: I have used my entire free tier, so I am unable to deploy it on AWS.
-##### 2. Correct Solutions and accurate answers
+#### 2. Correct Solutions and accurate answers
 ##### Reason: The OpenAI API is not functioning, so I opted for GPT-2, which takes more time to process and sometimes provides irrelevant responses. These could be improved through prompt optimization.
+
+
+## Installation in Local System
+
+1. clone the project
+```bash
+git clone https://github.com/saiguptha2003/Cyber-Security-Graph-Based-RAG-System-.git
+
+```
+2. a. Installation of Poetry Tool for Linux
+``` bash
+curl -sSL https://install.python-poetry.org | python3 -
+
+```
+2. b. Installation of Poetry Tool for Windows
+``` bash
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+
+```
+3. Intialize the poetry to the project
+```bash
+ peotry init 
+```
+4. Activate the Poetry Virtual Environment
+```bash
+poetry shell
+```
+5. install the dependencies through Poetry tool
+```bash
+poetry install
+```
+or 
+
+```bash
+pip install requirements.txt
+```
+
+there the pyproject file will be used as the lookup file
+6. change directory to src
+```bash
+cd src
+```
+7. Start FastAPI Server
+```bash
+uvicorn app.main:app --reload
+```
+
+
