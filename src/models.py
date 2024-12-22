@@ -11,7 +11,7 @@ class Entity(BaseModel):
     type: str
     properties: dict
     relationships: List[Relationship]
-
+#hello pandu
 # Endpoint function
 class QueryRequest(BaseModel):
     question: str  # Ensure that 'question' is a required string field
