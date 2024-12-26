@@ -21,3 +21,12 @@ ENV PYTHONUNBUFFERED=1
 
 # Run the FastAPI app using Uvicorn
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+ADD 
+adsf
+ADD fads
+f
+adsf
+as
+Defineadsf
+a dest destdest
